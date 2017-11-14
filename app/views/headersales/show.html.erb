@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fechaventa:</strong>
+  <%= @headersale.fechaventa %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @headersale.client %>
+</p>
+
+<p>
+  <strong>Horaventa:</strong>
+  <%= @headersale.horaventa %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @headersale.user %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @headersale.iva %>
+</p>
+
+<p>
+  <strong>Totalefectivo:</strong>
+  <%= @headersale.totalefectivo %>
+</p>
+
+<p>
+  <strong>Totaltarjeta:</strong>
+  <%= @headersale.totaltarjeta %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @headersale.total %>
+</p>
+
+<%= link_to 'Edit', edit_headersale_path(@headersale) %> |
+<%= link_to 'Back', headersales_path %>

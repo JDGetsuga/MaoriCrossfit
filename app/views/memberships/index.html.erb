@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Memberships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Fechainicio</th>
+      <th>Fechaexpiracion</th>
+      <th>Service</th>
+      <th>Rate</th>
+      <th>Entradasrestantes</th>
+      <th>Estado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @memberships.each do |membership| %>
+      <tr>
+        <td><%= membership.client %></td>
+        <td><%= membership.fechainicio %></td>
+        <td><%= membership.fechaexpiracion %></td>
+        <td><%= membership.service %></td>
+        <td><%= membership.rate %></td>
+        <td><%= membership.entradasrestantes %></td>
+        <td><%= membership.estado %></td>
+        <td><%= link_to 'Show', membership %></td>
+        <td><%= link_to 'Edit', edit_membership_path(membership) %></td>
+        <td><%= link_to 'Destroy', membership, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Membership', new_membership_path %>

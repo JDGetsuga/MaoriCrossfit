@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Headersales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fechaventa</th>
+      <th>Client</th>
+      <th>Horaventa</th>
+      <th>User</th>
+      <th>Iva</th>
+      <th>Totalefectivo</th>
+      <th>Totaltarjeta</th>
+      <th>Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @headersales.each do |headersale| %>
+      <tr>
+        <td><%= headersale.fechaventa %></td>
+        <td><%= headersale.client %></td>
+        <td><%= headersale.horaventa %></td>
+        <td><%= headersale.user %></td>
+        <td><%= headersale.iva %></td>
+        <td><%= headersale.totalefectivo %></td>
+        <td><%= headersale.totaltarjeta %></td>
+        <td><%= headersale.total %></td>
+        <td><%= link_to 'Show', headersale %></td>
+        <td><%= link_to 'Edit', edit_headersale_path(headersale) %></td>
+        <td><%= link_to 'Destroy', headersale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Headersale', new_headersale_path %>

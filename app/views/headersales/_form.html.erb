@@ -1,0 +1,49 @@
+<%= form_for(@headersale) do |f| %>
+  <% if @headersale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@headersale.errors.count, "error") %> prohibited this headersale from being saved:</h2>
+
+      <ul>
+      <% @headersale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fechaventa %><br>
+    <%= f.date_select :fechaventa %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :horaventa %><br>
+    <%= f.time_select :horaventa %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :iva %><br>
+    <%= f.text_field :iva %>
+  </div>
+  <div class="field">
+    <%= f.label :totalefectivo %><br>
+    <%= f.text_field :totalefectivo %>
+  </div>
+  <div class="field">
+    <%= f.label :totaltarjeta %><br>
+    <%= f.text_field :totaltarjeta %>
+  </div>
+  <div class="field">
+    <%= f.label :total %><br>
+    <%= f.text_field :total %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

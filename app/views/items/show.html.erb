@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @item.nombre %>
+</p>
+
+<p>
+  <strong>Preciocompra:</strong>
+  <%= @item.preciocompra %>
+</p>
+
+<p>
+  <strong>Precioventa:</strong>
+  <%= @item.precioventa %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @item.cantidad %>
+</p>
+
+<p>
+  <strong>Cantidadminima:</strong>
+  <%= @item.cantidadminima %>
+</p>
+
+<p>
+  <strong>Ganancia:</strong>
+  <%= @item.ganancia %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @item.tipo %>
+</p>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @item.supplier %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fechaventa: 2017-11-13
+  client_id: 
+  horaventa: 2017-11-13 22:39:20
+  user_id: 
+  iva: 9.99
+  totalefectivo: 9.99
+  totaltarjeta: 9.99
+  total: 9.99
+
+two:
+  fechaventa: 2017-11-13
+  client_id: 
+  horaventa: 2017-11-13 22:39:20
+  user_id: 
+  iva: 9.99
+  totalefectivo: 9.99
+  totaltarjeta: 9.99
+  total: 9.99

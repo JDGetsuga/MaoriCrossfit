@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @classrecord.user %>
+</p>
+
+<p>
+  <strong>Membership:</strong>
+  <%= @classrecord.membership %>
+</p>
+
+<%= link_to 'Edit', edit_classrecord_path(@classrecord) %> |
+<%= link_to 'Back', classrecords_path %>

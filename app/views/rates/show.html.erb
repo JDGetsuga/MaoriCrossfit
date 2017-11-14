@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @rate.nombre %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @rate.precio %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @rate.descuento %>
+</p>
+
+<p>
+  <strong>Entradas:</strong>
+  <%= @rate.entradas %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @rate.service %>
+</p>
+
+<%= link_to 'Edit', edit_rate_path(@rate) %> |
+<%= link_to 'Back', rates_path %>

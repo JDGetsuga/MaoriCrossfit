@@ -1,0 +1,41 @@
+<%= form_for(@lesson) do |f| %>
+  <% if @lesson.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lesson.errors.count, "error") %> prohibited this lesson from being saved:</h2>
+
+      <ul>
+      <% @lesson.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fechaactual %><br>
+    <%= f.date_select :fechaactual %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :horainicio %><br>
+    <%= f.time_select :horainicio %>
+  </div>
+  <div class="field">
+    <%= f.label :horafin %><br>
+    <%= f.time_select :horafin %>
+  </div>
+  <div class="field">
+    <%= f.label :service_id %><br>
+    <%= f.text_field :service_id %>
+  </div>
+  <div class="field">
+    <%= f.label :capacidad %><br>
+    <%= f.number_field :capacidad %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

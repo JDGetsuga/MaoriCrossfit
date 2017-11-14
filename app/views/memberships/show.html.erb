@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @membership.client %>
+</p>
+
+<p>
+  <strong>Fechainicio:</strong>
+  <%= @membership.fechainicio %>
+</p>
+
+<p>
+  <strong>Fechaexpiracion:</strong>
+  <%= @membership.fechaexpiracion %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @membership.service %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @membership.rate %>
+</p>
+
+<p>
+  <strong>Entradasrestantes:</strong>
+  <%= @membership.entradasrestantes %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @membership.estado %>
+</p>
+
+<%= link_to 'Edit', edit_membership_path(@membership) %> |
+<%= link_to 'Back', memberships_path %>

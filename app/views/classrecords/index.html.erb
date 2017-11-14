@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Classrecords</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Membership</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classrecords.each do |classrecord| %>
+      <tr>
+        <td><%= classrecord.user %></td>
+        <td><%= classrecord.membership %></td>
+        <td><%= link_to 'Show', classrecord %></td>
+        <td><%= link_to 'Edit', edit_classrecord_path(classrecord) %></td>
+        <td><%= link_to 'Destroy', classrecord, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Classrecord', new_classrecord_path %>

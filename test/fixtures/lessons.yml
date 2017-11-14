@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fechaactual: 2017-11-13
+  user_id: 
+  horainicio: 2017-11-13 22:46:29
+  horafin: 2017-11-13 22:46:29
+  service_id: 
+  capacidad: 1
+
+two:
+  fechaactual: 2017-11-13
+  user_id: 
+  horainicio: 2017-11-13 22:46:29
+  horafin: 2017-11-13 22:46:29
+  service_id: 
+  capacidad: 1

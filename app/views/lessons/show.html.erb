@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fechaactual:</strong>
+  <%= @lesson.fechaactual %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @lesson.user %>
+</p>
+
+<p>
+  <strong>Horainicio:</strong>
+  <%= @lesson.horainicio %>
+</p>
+
+<p>
+  <strong>Horafin:</strong>
+  <%= @lesson.horafin %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @lesson.service %>
+</p>
+
+<p>
+  <strong>Capacidad:</strong>
+  <%= @lesson.capacidad %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<%= link_to 'Back', lessons_path %>
